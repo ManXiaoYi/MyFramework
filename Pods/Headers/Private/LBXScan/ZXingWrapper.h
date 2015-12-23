@@ -1,0 +1,1 @@
+../../../LBXScan/LBXScan/LibZXing/ZXingWrapper/ZXingWrapper.h

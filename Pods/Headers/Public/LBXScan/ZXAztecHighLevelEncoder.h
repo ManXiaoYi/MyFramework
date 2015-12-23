@@ -1,0 +1,1 @@
+../../../LBXScan/LBXScan/LibZXing/ZXingObjC/aztec/encoder/ZXAztecHighLevelEncoder.h

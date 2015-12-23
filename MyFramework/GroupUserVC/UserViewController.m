@@ -1,0 +1,30 @@
+//
+//  UserViewController.m
+//  MyFramework
+//
+//  Created by 满孝意 on 15/12/21.
+//  Copyright © 2015年 满孝意. All rights reserved.
+//
+
+#import "UserViewController.h"
+
+@interface UserViewController ()
+
+@end
+
+@implementation UserViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"我的";
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+@end

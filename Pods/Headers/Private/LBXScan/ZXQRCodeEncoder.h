@@ -1,0 +1,1 @@
+../../../LBXScan/LBXScan/LibZXing/ZXingObjC/qrcode/encoder/ZXQRCodeEncoder.h

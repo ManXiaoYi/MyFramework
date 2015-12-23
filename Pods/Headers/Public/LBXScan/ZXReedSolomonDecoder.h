@@ -1,0 +1,1 @@
+../../../LBXScan/LBXScan/LibZXing/ZXingObjC/common/reedsolomon/ZXReedSolomonDecoder.h

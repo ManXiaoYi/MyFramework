@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     
     
+    
     // TODO: -----------------  自动处理键盘事件  -----------------
     IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
     // 整个功能是否启用
@@ -30,7 +31,6 @@
     manager.shouldToolbarUsesTextFieldTintColor = YES;
     // 是否显示键盘上的工具条
     manager.enableAutoToolbar = YES;
-    
     
     
     

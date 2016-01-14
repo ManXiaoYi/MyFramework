@@ -1,1 +1,0 @@
-../../../LBXScan/LBXScan/LibZXing/ZXingObjC/aztec/encoder/ZXAztecSimpleToken.h

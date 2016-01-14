@@ -135,7 +135,18 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
 }
 
 /**
- *  显示提示信息后添加动作
+ *  显示提示信息 - 不消失
+ */
++ (void)showLoadText:(NSString *)text view:(UIView *)view {
+    MBProgressHUD *showHud = [[MBProgressHUD alloc] initWithView:view];
+    [view addSubview:showHud];
+    showHud.labelText = text;
+    showHud.mode = MBProgressHUDModeIndeterminate;
+    [showHud show:YES];
+}
+
+/**
+ *  显示提示信息后添加动作 - 1秒后自动消失
  */
 + (void)showText:(NSString *)text view:(UIView *)view completionBlock:(void (^)())completion {
     [MBProgressHUD hideHUDForView:view animated:YES];

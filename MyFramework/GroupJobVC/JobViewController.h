@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainViewController.h"
 
-@interface JobViewController : UIViewController
+@interface JobViewController : MainViewController
 
 @end

@@ -1,0 +1,8 @@
+
+1. 首页
+
+1>广告页  ----  SDCycleScrollView
+2>处理键盘 ----  IQKeyboardManager
+3>登录账号 ----  AFNetworking & MBProgressHUD
+4>刷新界面 ----  MJRefresh
+5>下载文件 ----  QLPreviewController

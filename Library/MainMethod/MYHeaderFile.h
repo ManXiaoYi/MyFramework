@@ -14,5 +14,7 @@
 #import "MYGlobalMethod.h"
 #import "MYAppInformation.h"
 #import "MYAlertAction.h"
+#import <MJRefresh.h>
+#import "MBProgressHUD.h"
 
 #endif /* MYHeaderFile_h */

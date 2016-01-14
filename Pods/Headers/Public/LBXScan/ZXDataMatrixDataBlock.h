@@ -1,1 +1,0 @@
-../../../LBXScan/LBXScan/LibZXing/ZXingObjC/datamatrix/decoder/ZXDataMatrixDataBlock.h

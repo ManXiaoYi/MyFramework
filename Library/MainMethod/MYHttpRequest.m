@@ -24,7 +24,7 @@
     [MYHttpRequest checkNetworkConnectionState];
     
     NSString *urlStr = [MYHttpRequest requestGETPath:firstParam andSection:secondParam andParams:infoDict];
-    NSLog(@"-------------------------------------------->\n\nurlStr = %@\n\n<--------------------------------------------", urlStr);
+    NSLog(@"\n\n-------------------------------------------------------------------------->\n\nurlStr = %@\n\n<--------------------------------------------------------------------------\n\n", urlStr);
     AFHTTPSessionManager *httpManager  = [AFHTTPSessionManager manager];
     httpManager.requestSerializer.timeoutInterval = KTimeoutInterval;
     [httpManager GET:urlStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -71,7 +71,7 @@
     [MYHttpRequest checkNetworkConnectionState];
     
     NSString *urlStr = [MYHttpRequest requestPOSTPath:firstParam andSection:secondParam];
-    NSLog(@"-------------------------------------------->\n\nurlStr = %@/data=%@\n\n<--------------------------------------------", urlStr, infoDict);
+    NSLog(@"\n\n-------------------------------------------------------------------------->\n\nurlStr = %@/data=%@\n\n<--------------------------------------------------------------------------\n\n", urlStr, infoDict);
     
     NSString *jsonStr = nil;
     NSError *error;
@@ -93,6 +93,7 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (requestSuccess) {
+            NSLog(@"\n\n-------------------------------------------------------------------------->\n\nresponseObject = %@\n\n<--------------------------------------------------------------------------\n\n",  responseObject);
             requestSuccess(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -121,7 +122,7 @@
 + (void)downloadFileWithWithFuncName:(NSString *)firstParam function:(NSString *)secondParam jobid:(NSString *)jobid success:(RequestSuccess)success failure:(RequestFailure)failure {
     NSString *urlStr = [NSString stringWithFormat:@"%@/%@/%@/%@?v=1&sourcetype=1&corpid=%@&token=%@&jobid=%@&source=%@", SERVERSIP, @"v204", firstParam, secondParam, ValueFUD(user_login_userid), ValueFUD(user_login_token), jobid, @"ios"];
     urlStr = [urlStr stringByReplacingOccurrencesOfString:@"(null)" withString:@""];
-    NSLog(@"-------------------------------------------->\n\nurlStr = %@\n\n<--------------------------------------------", urlStr);
+    NSLog(@"-------------------------------------------------------------------------->\n\nurlStr = %@\n\n<--------------------------------------------------------------------------", urlStr);
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:5.0];
     NSURLSession *backgroundSession = [[NSURLSession alloc] init];

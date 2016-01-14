@@ -1,1 +1,0 @@
-../../../LBXScan/LBXScan/LibZXing/ZXingObjC/common/detector/ZXMonochromeRectangleDetector.h

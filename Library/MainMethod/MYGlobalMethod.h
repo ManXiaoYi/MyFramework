@@ -27,7 +27,9 @@
 + (UIImage *)createImageWithColor:(UIColor *)color andRect:(CGRect)rect andCornerRadius:(float)radius;
 
 
-/** ---- 显示提示信息后添加动作 ---- */
+/** ---- 显示提示信息 - 不消失 ---- */
++ (void)showLoadText:(NSString *)text view:(UIView *)view;
+/** ---- 显示提示信息后添加动作 - 1秒后自动消失 ---- */
 + (void)showText:(NSString *)text view:(UIView *)view completionBlock:(void (^)())completion;
 
 

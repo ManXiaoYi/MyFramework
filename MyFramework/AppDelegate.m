@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    // TODO: -----------------  自动处理键盘事件  -----------------
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    // 整个功能是否启用
+    manager.enable = YES;
+    // 点击背景是否收起键盘
+    manager.shouldResignOnTouchOutside = YES;
+    // 键盘上的工具条文字颜色是否用户自定义
+    manager.shouldToolbarUsesTextFieldTintColor = YES;
+    // 是否显示键盘上的工具条
+    manager.enableAutoToolbar = YES;
+    
+    
+    
+    
     return YES;
 }
 

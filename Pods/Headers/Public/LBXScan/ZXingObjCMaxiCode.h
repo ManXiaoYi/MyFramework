@@ -1,1 +1,0 @@
-../../../LBXScan/LBXScan/LibZXing/ZXingObjC/maxicode/ZXingObjCMaxiCode.h

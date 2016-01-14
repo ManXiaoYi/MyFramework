@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		7003778C7A717E48BE57CE46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C61023A12DADD8A246CB10AC /* libPods.a */; };
 		7858009A1C29293000F61497 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785800871C29293000F61497 /* FindViewController.m */; };
-		7858009B1C29293000F61497 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 785800891C29293000F61497 /* CodeScan.bundle */; };
-		7858009C1C29293000F61497 /* MyQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7858008B1C29293000F61497 /* MyQRCodeViewController.m */; };
-		7858009D1C29293000F61497 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7858008D1C29293000F61497 /* QRCodeViewController.m */; };
-		7858009E1C29293000F61497 /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7858008F1C29293000F61497 /* ScanResultViewController.m */; };
-		7858009F1C29293000F61497 /* ScanResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785800901C29293000F61497 /* ScanResultViewController.xib */; };
 		785800A01C29293000F61497 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785800931C29293000F61497 /* HomeViewController.m */; };
 		785800A11C29293000F61497 /* JobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785800961C29293000F61497 /* JobViewController.m */; };
 		785800A21C29293000F61497 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785800991C29293000F61497 /* UserViewController.m */; };
@@ -23,17 +18,11 @@
 		785800C01C29476000F61497 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785800BF1C29476000F61497 /* MainTabBarController.m */; };
 		785C10AC1C27EF1400E35704 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C10AB1C27EF1400E35704 /* main.m */; };
 		785C10AF1C27EF1400E35704 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C10AE1C27EF1400E35704 /* AppDelegate.m */; };
-		785C10B21C27EF1400E35704 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C10B11C27EF1400E35704 /* ViewController.m */; };
 		785C10B51C27EF1400E35704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785C10B31C27EF1400E35704 /* Main.storyboard */; };
 		785C10B71C27EF1400E35704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785C10B61C27EF1400E35704 /* Assets.xcassets */; };
 		785C10BA1C27EF1400E35704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785C10B81C27EF1400E35704 /* LaunchScreen.storyboard */; };
 		785C10C51C27EF1400E35704 /* MyFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C10C41C27EF1400E35704 /* MyFrameworkTests.m */; };
 		785C10D01C27EF1400E35704 /* MyFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C10CF1C27EF1400E35704 /* MyFrameworkUITests.m */; };
-		785C10F71C27F06600E35704 /* ad1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 785C10E01C27F06600E35704 /* ad1.jpg */; };
-		785C10F81C27F06600E35704 /* ad2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 785C10E11C27F06600E35704 /* ad2.jpg */; };
-		785C10F91C27F06600E35704 /* ad3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 785C10E21C27F06600E35704 /* ad3.jpg */; };
-		785C10FA1C27F06600E35704 /* ad4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 785C10E31C27F06600E35704 /* ad4.jpg */; };
-		785C10FB1C27F06600E35704 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785C10E41C27F06600E35704 /* placeholder@2x.png */; };
 		785C10FC1C27F06600E35704 /* img_index_01bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785C10E61C27F06600E35704 /* img_index_01bg@2x.png */; };
 		785C10FD1C27F06600E35704 /* img_index_01txt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785C10E71C27F06600E35704 /* img_index_01txt@2x.png */; };
 		785C10FE1C27F06600E35704 /* img_index_02bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785C10E81C27F06600E35704 /* img_index_02bg@2x.png */; };
@@ -50,6 +39,26 @@
 		785C11091C27F06600E35704 /* near_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785C10F41C27F06600E35704 /* near_selected@2x.png */; };
 		785C110D1C27F0E100E35704 /* MYHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C110C1C27F0E100E35704 /* MYHttpRequest.m */; };
 		785C11101C27F18700E35704 /* MYGlobalMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C110F1C27F18700E35704 /* MYGlobalMethod.m */; };
+		78C55ABF1C4747E900FFEB37 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78C55AB71C4747E900FFEB37 /* CodeScan.bundle */; };
+		78C55AC01C4747E900FFEB37 /* MyQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C55AB91C4747E900FFEB37 /* MyQRCodeViewController.m */; };
+		78C55AC11C4747E900FFEB37 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C55ABB1C4747E900FFEB37 /* QRCodeViewController.m */; };
+		78C55AC21C4747E900FFEB37 /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C55ABD1C4747E900FFEB37 /* ScanResultViewController.m */; };
+		78C55AC31C4747E900FFEB37 /* ScanResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78C55ABE1C4747E900FFEB37 /* ScanResultViewController.xib */; };
+		78C55AC71C47480700FFEB37 /* AdsPagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C55AC61C47480700FFEB37 /* AdsPagesViewController.m */; };
+		78C55ACA1C47487100FFEB37 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C55AC91C47487100FFEB37 /* MainViewController.m */; };
+		78C55AD71C47798300FFEB37 /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C55ACC1C47798300FFEB37 /* 005.jpg */; };
+		78C55AD81C47798300FFEB37 /* h1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C55ACD1C47798300FFEB37 /* h1.jpg */; };
+		78C55AD91C47798300FFEB37 /* h2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C55ACE1C47798300FFEB37 /* h2.jpg */; };
+		78C55ADA1C47798300FFEB37 /* h3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C55ACF1C47798300FFEB37 /* h3.jpg */; };
+		78C55ADB1C47798300FFEB37 /* h4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78C55AD01C47798300FFEB37 /* h4.jpg */; };
+		78C55ADC1C47798300FFEB37 /* h6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78C55AD11C47798300FFEB37 /* h6@2x.png */; };
+		78C55ADD1C47798300FFEB37 /* pageControlCurrentDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78C55AD21C47798300FFEB37 /* pageControlCurrentDot@2x.png */; };
+		78C55ADE1C47798300FFEB37 /* pageControlCurrentDot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78C55AD31C47798300FFEB37 /* pageControlCurrentDot@3x.png */; };
+		78C55ADF1C47798300FFEB37 /* pageControlDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78C55AD41C47798300FFEB37 /* pageControlDot@2x.png */; };
+		78C55AE01C47798300FFEB37 /* pageControlDot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78C55AD51C47798300FFEB37 /* pageControlDot@3x.png */; };
+		78C55AE11C47798300FFEB37 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78C55AD61C47798300FFEB37 /* placeholder@2x.png */; };
+		78C55AE31C477C9C00FFEB37 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 78C55AE21C477C9C00FFEB37 /* README */; };
+		78C55AE61C477E2B00FFEB37 /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C55AE51C477E2B00FFEB37 /* RefreshViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,14 +81,6 @@
 /* Begin PBXFileReference section */
 		785800861C29293000F61497 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
 		785800871C29293000F61497 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
-		785800891C29293000F61497 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
-		7858008A1C29293000F61497 /* MyQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQRCodeViewController.h; sourceTree = "<group>"; };
-		7858008B1C29293000F61497 /* MyQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQRCodeViewController.m; sourceTree = "<group>"; };
-		7858008C1C29293000F61497 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
-		7858008D1C29293000F61497 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
-		7858008E1C29293000F61497 /* ScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
-		7858008F1C29293000F61497 /* ScanResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
-		785800901C29293000F61497 /* ScanResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanResultViewController.xib; sourceTree = "<group>"; };
 		785800921C29293000F61497 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		785800931C29293000F61497 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		785800951C29293000F61497 /* JobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobViewController.h; sourceTree = "<group>"; };
@@ -98,8 +99,6 @@
 		785C10AB1C27EF1400E35704 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		785C10AD1C27EF1400E35704 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		785C10AE1C27EF1400E35704 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		785C10B01C27EF1400E35704 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		785C10B11C27EF1400E35704 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		785C10B41C27EF1400E35704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		785C10B61C27EF1400E35704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		785C10B91C27EF1400E35704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -136,6 +135,32 @@
 		785C110F1C27F18700E35704 /* MYGlobalMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYGlobalMethod.m; sourceTree = "<group>"; };
 		785C11141C27F25A00E35704 /* MYMacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMacroDefinition.h; sourceTree = "<group>"; };
 		785C11151C27F51800E35704 /* MYAppInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAppInformation.h; sourceTree = "<group>"; };
+		78C55AB71C4747E900FFEB37 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
+		78C55AB81C4747E900FFEB37 /* MyQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQRCodeViewController.h; sourceTree = "<group>"; };
+		78C55AB91C4747E900FFEB37 /* MyQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQRCodeViewController.m; sourceTree = "<group>"; };
+		78C55ABA1C4747E900FFEB37 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		78C55ABB1C4747E900FFEB37 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		78C55ABC1C4747E900FFEB37 /* ScanResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
+		78C55ABD1C4747E900FFEB37 /* ScanResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
+		78C55ABE1C4747E900FFEB37 /* ScanResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanResultViewController.xib; sourceTree = "<group>"; };
+		78C55AC51C47480700FFEB37 /* AdsPagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsPagesViewController.h; sourceTree = "<group>"; };
+		78C55AC61C47480700FFEB37 /* AdsPagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsPagesViewController.m; sourceTree = "<group>"; };
+		78C55AC81C47487100FFEB37 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		78C55AC91C47487100FFEB37 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		78C55ACC1C47798300FFEB37 /* 005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.jpg; sourceTree = "<group>"; };
+		78C55ACD1C47798300FFEB37 /* h1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h1.jpg; sourceTree = "<group>"; };
+		78C55ACE1C47798300FFEB37 /* h2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h2.jpg; sourceTree = "<group>"; };
+		78C55ACF1C47798300FFEB37 /* h3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h3.jpg; sourceTree = "<group>"; };
+		78C55AD01C47798300FFEB37 /* h4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h4.jpg; sourceTree = "<group>"; };
+		78C55AD11C47798300FFEB37 /* h6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h6@2x.png"; sourceTree = "<group>"; };
+		78C55AD21C47798300FFEB37 /* pageControlCurrentDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlCurrentDot@2x.png"; sourceTree = "<group>"; };
+		78C55AD31C47798300FFEB37 /* pageControlCurrentDot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlCurrentDot@3x.png"; sourceTree = "<group>"; };
+		78C55AD41C47798300FFEB37 /* pageControlDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlDot@2x.png"; sourceTree = "<group>"; };
+		78C55AD51C47798300FFEB37 /* pageControlDot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlDot@3x.png"; sourceTree = "<group>"; };
+		78C55AD61C47798300FFEB37 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
+		78C55AE21C477C9C00FFEB37 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		78C55AE41C477E2B00FFEB37 /* RefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshViewController.h; sourceTree = "<group>"; };
+		78C55AE51C477E2B00FFEB37 /* RefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshViewController.m; sourceTree = "<group>"; };
 		99E6AD8ECA0FF0920CC3A901 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C61023A12DADD8A246CB10AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DCFE9041A3F9176205895F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,31 +195,17 @@
 		785800851C29293000F61497 /* GroupFindVC */ = {
 			isa = PBXGroup;
 			children = (
+				78C55AB41C4747CC00FFEB37 /* ViewControllers */,
 				785800861C29293000F61497 /* FindViewController.h */,
 				785800871C29293000F61497 /* FindViewController.m */,
-				785800881C29293000F61497 /* QRCodeViewController */,
 			);
 			path = GroupFindVC;
-			sourceTree = "<group>";
-		};
-		785800881C29293000F61497 /* QRCodeViewController */ = {
-			isa = PBXGroup;
-			children = (
-				785800891C29293000F61497 /* CodeScan.bundle */,
-				7858008A1C29293000F61497 /* MyQRCodeViewController.h */,
-				7858008B1C29293000F61497 /* MyQRCodeViewController.m */,
-				7858008C1C29293000F61497 /* QRCodeViewController.h */,
-				7858008D1C29293000F61497 /* QRCodeViewController.m */,
-				7858008E1C29293000F61497 /* ScanResultViewController.h */,
-				7858008F1C29293000F61497 /* ScanResultViewController.m */,
-				785800901C29293000F61497 /* ScanResultViewController.xib */,
-			);
-			path = QRCodeViewController;
 			sourceTree = "<group>";
 		};
 		785800911C29293000F61497 /* GroupHomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				78C55AC41C47480700FFEB37 /* ViewControllers */,
 				785800921C29293000F61497 /* HomeViewController.h */,
 				785800931C29293000F61497 /* HomeViewController.m */,
 			);
@@ -204,6 +215,7 @@
 		785800941C29293000F61497 /* GroupJobVC */ = {
 			isa = PBXGroup;
 			children = (
+				78C55AB31C4747C500FFEB37 /* ViewControllers */,
 				785800951C29293000F61497 /* JobViewController.h */,
 				785800961C29293000F61497 /* JobViewController.m */,
 			);
@@ -213,6 +225,7 @@
 		785800971C29293000F61497 /* GroupUserVC */ = {
 			isa = PBXGroup;
 			children = (
+				78C55AB51C4747D500FFEB37 /* ViewControllers */,
 				785800981C29293000F61497 /* UserViewController.h */,
 				785800991C29293000F61497 /* UserViewController.m */,
 			);
@@ -258,14 +271,13 @@
 		785C10A91C27EF1400E35704 /* MyFramework */ = {
 			isa = PBXGroup;
 			children = (
+				78C55AE21C477C9C00FFEB37 /* README */,
 				785800911C29293000F61497 /* GroupHomeVC */,
 				785800941C29293000F61497 /* GroupJobVC */,
 				785800851C29293000F61497 /* GroupFindVC */,
 				785800971C29293000F61497 /* GroupUserVC */,
 				785C10AD1C27EF1400E35704 /* AppDelegate.h */,
 				785C10AE1C27EF1400E35704 /* AppDelegate.m */,
-				785C10B01C27EF1400E35704 /* ViewController.h */,
-				785C10B11C27EF1400E35704 /* ViewController.m */,
 				785C10B31C27EF1400E35704 /* Main.storyboard */,
 				785C10B61C27EF1400E35704 /* Assets.xcassets */,
 				785C10B81C27EF1400E35704 /* LaunchScreen.storyboard */,
@@ -315,6 +327,7 @@
 		785C10DE1C27F06600E35704 /* ImageResource */ = {
 			isa = PBXGroup;
 			children = (
+				78C55ACB1C47798300FFEB37 /* AdsImages */,
 				785C10DF1C27F06600E35704 /* AdvertisementImages */,
 				785C10E51C27F06600E35704 /* IntroductionImages */,
 				785C10EC1C27F06600E35704 /* TabbarImages */,
@@ -381,6 +394,8 @@
 			children = (
 				785800BE1C29476000F61497 /* MainTabBarController.h */,
 				785800BF1C29476000F61497 /* MainTabBarController.m */,
+				78C55AC81C47487100FFEB37 /* MainViewController.h */,
+				78C55AC91C47487100FFEB37 /* MainViewController.m */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -391,6 +406,72 @@
 				785800B41C292CEB00F61497 /* MYAlertAction */,
 			);
 			path = MainLibrary;
+			sourceTree = "<group>";
+		};
+		78C55AB31C4747C500FFEB37 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		78C55AB41C4747CC00FFEB37 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				78C55AB61C4747E900FFEB37 /* QRCodeViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		78C55AB51C4747D500FFEB37 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		78C55AB61C4747E900FFEB37 /* QRCodeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78C55AB71C4747E900FFEB37 /* CodeScan.bundle */,
+				78C55AB81C4747E900FFEB37 /* MyQRCodeViewController.h */,
+				78C55AB91C4747E900FFEB37 /* MyQRCodeViewController.m */,
+				78C55ABA1C4747E900FFEB37 /* QRCodeViewController.h */,
+				78C55ABB1C4747E900FFEB37 /* QRCodeViewController.m */,
+				78C55ABC1C4747E900FFEB37 /* ScanResultViewController.h */,
+				78C55ABD1C4747E900FFEB37 /* ScanResultViewController.m */,
+				78C55ABE1C4747E900FFEB37 /* ScanResultViewController.xib */,
+			);
+			path = QRCodeViewController;
+			sourceTree = "<group>";
+		};
+		78C55AC41C47480700FFEB37 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				78C55AC51C47480700FFEB37 /* AdsPagesViewController.h */,
+				78C55AC61C47480700FFEB37 /* AdsPagesViewController.m */,
+				78C55AE41C477E2B00FFEB37 /* RefreshViewController.h */,
+				78C55AE51C477E2B00FFEB37 /* RefreshViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		78C55ACB1C47798300FFEB37 /* AdsImages */ = {
+			isa = PBXGroup;
+			children = (
+				78C55ACC1C47798300FFEB37 /* 005.jpg */,
+				78C55ACD1C47798300FFEB37 /* h1.jpg */,
+				78C55ACE1C47798300FFEB37 /* h2.jpg */,
+				78C55ACF1C47798300FFEB37 /* h3.jpg */,
+				78C55AD01C47798300FFEB37 /* h4.jpg */,
+				78C55AD11C47798300FFEB37 /* h6@2x.png */,
+				78C55AD21C47798300FFEB37 /* pageControlCurrentDot@2x.png */,
+				78C55AD31C47798300FFEB37 /* pageControlCurrentDot@3x.png */,
+				78C55AD41C47798300FFEB37 /* pageControlDot@2x.png */,
+				78C55AD51C47798300FFEB37 /* pageControlDot@3x.png */,
+				78C55AD61C47798300FFEB37 /* placeholder@2x.png */,
+			);
+			path = AdsImages;
 			sourceTree = "<group>";
 		};
 		98148299C1D476E663DF2B51 /* Frameworks */ = {
@@ -516,29 +597,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				785C10F91C27F06600E35704 /* ad3.jpg in Resources */,
+				78C55ADA1C47798300FFEB37 /* h3.jpg in Resources */,
+				78C55AD81C47798300FFEB37 /* h1.jpg in Resources */,
+				78C55ADE1C47798300FFEB37 /* pageControlCurrentDot@3x.png in Resources */,
+				78C55AE01C47798300FFEB37 /* pageControlDot@3x.png in Resources */,
 				785C11011C27F06600E35704 /* img_index_03txt@2x.png in Resources */,
-				785C10F71C27F06600E35704 /* ad1.jpg in Resources */,
-				7858009B1C29293000F61497 /* CodeScan.bundle in Resources */,
+				78C55ADB1C47798300FFEB37 /* h4.jpg in Resources */,
+				78C55ADD1C47798300FFEB37 /* pageControlCurrentDot@2x.png in Resources */,
+				78C55ADC1C47798300FFEB37 /* h6@2x.png in Resources */,
+				78C55ABF1C4747E900FFEB37 /* CodeScan.bundle in Resources */,
 				785C11091C27F06600E35704 /* near_selected@2x.png in Resources */,
 				785C10FC1C27F06600E35704 /* img_index_01bg@2x.png in Resources */,
 				785C11081C27F06600E35704 /* near_normal@2x.png in Resources */,
-				785C10FB1C27F06600E35704 /* placeholder@2x.png in Resources */,
-				7858009F1C29293000F61497 /* ScanResultViewController.xib in Resources */,
+				78C55AE11C47798300FFEB37 /* placeholder@2x.png in Resources */,
+				78C55AC31C4747E900FFEB37 /* ScanResultViewController.xib in Resources */,
 				785C11071C27F06600E35704 /* my_selected@2x.png in Resources */,
 				785C11001C27F06600E35704 /* img_index_03bg@2x.png in Resources */,
 				785C10BA1C27EF1400E35704 /* LaunchScreen.storyboard in Resources */,
+				78C55ADF1C47798300FFEB37 /* pageControlDot@2x.png in Resources */,
 				785C10FE1C27F06600E35704 /* img_index_02bg@2x.png in Resources */,
 				785C11021C27F06600E35704 /* find_normal@2x.png in Resources */,
 				785C10B71C27EF1400E35704 /* Assets.xcassets in Resources */,
 				785C11051C27F06600E35704 /* home_selected@2x.png in Resources */,
 				785C11061C27F06600E35704 /* my_normal@2x.png in Resources */,
 				785C11031C27F06600E35704 /* find_selected@2x.png in Resources */,
-				785C10F81C27F06600E35704 /* ad2.jpg in Resources */,
 				785C11041C27F06600E35704 /* home_normal@2x.png in Resources */,
+				78C55AD71C47798300FFEB37 /* 005.jpg in Resources */,
 				785C10FF1C27F06600E35704 /* img_index_02txt@2x.png in Resources */,
+				78C55AE31C477C9C00FFEB37 /* README in Resources */,
 				785C10B51C27EF1400E35704 /* Main.storyboard in Resources */,
-				785C10FA1C27F06600E35704 /* ad4.jpg in Resources */,
+				78C55AD91C47798300FFEB37 /* h2.jpg in Resources */,
 				785C10FD1C27F06600E35704 /* img_index_01txt@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,21 +700,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C55AC71C47480700FFEB37 /* AdsPagesViewController.m in Sources */,
 				785800BB1C292CEB00F61497 /* MYAlertAction.m in Sources */,
-				7858009E1C29293000F61497 /* ScanResultViewController.m in Sources */,
-				785C10B21C27EF1400E35704 /* ViewController.m in Sources */,
+				78C55AE61C477E2B00FFEB37 /* RefreshViewController.m in Sources */,
 				785C110D1C27F0E100E35704 /* MYHttpRequest.m in Sources */,
 				785C10AF1C27EF1400E35704 /* AppDelegate.m in Sources */,
 				785C11101C27F18700E35704 /* MYGlobalMethod.m in Sources */,
+				78C55AC01C4747E900FFEB37 /* MyQRCodeViewController.m in Sources */,
 				785800A01C29293000F61497 /* HomeViewController.m in Sources */,
 				785800BC1C292CEB00F61497 /* UIActionSheet+BlockT.m in Sources */,
-				7858009D1C29293000F61497 /* QRCodeViewController.m in Sources */,
 				785800C01C29476000F61497 /* MainTabBarController.m in Sources */,
 				785800BD1C292CEB00F61497 /* UIAlertView+BlockT.m in Sources */,
 				785800A11C29293000F61497 /* JobViewController.m in Sources */,
 				785C10AC1C27EF1400E35704 /* main.m in Sources */,
-				7858009C1C29293000F61497 /* MyQRCodeViewController.m in Sources */,
+				78C55ACA1C47487100FFEB37 /* MainViewController.m in Sources */,
+				78C55AC21C4747E900FFEB37 /* ScanResultViewController.m in Sources */,
 				785800A21C29293000F61497 /* UserViewController.m in Sources */,
+				78C55AC11C4747E900FFEB37 /* QRCodeViewController.m in Sources */,
 				7858009A1C29293000F61497 /* FindViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

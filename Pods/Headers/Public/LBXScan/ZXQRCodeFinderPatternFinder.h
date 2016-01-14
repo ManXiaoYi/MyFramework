@@ -1,1 +1,0 @@
-../../../LBXScan/LBXScan/LibZXing/ZXingObjC/qrcode/detector/ZXQRCodeFinderPatternFinder.h

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '46746C3B29F6EF413746D182'
+               BlueprintIdentifier = 'A3C978AC573F8A54ED8C5457'
                BlueprintName = 'ZWIntroductionViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libZWIntroductionViewController.a'>

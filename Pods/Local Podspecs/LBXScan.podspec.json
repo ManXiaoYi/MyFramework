@@ -1,6 +1,6 @@
 {
   "name": "LBXScan",
-  "version": "1.0.13",
+  "version": "1.1.1",
   "summary": "ios scan wrapper",
   "homepage": "https://github.com/MxABC",
   "license": "MIT",
@@ -12,15 +12,14 @@
   },
   "source": {
     "git": "https://github.com/MxABC/LBXScan.git",
-    "tag": "1.0.13"
+    "tag": "1.1.1"
   },
   "requires_arc": true,
   "source_files": "LBXScan/*.{h,m}",
   "prefix_header_contents": "#import <Foundation/Foundation.h>",
-  "subspecs": [
-    {
-      "name": "LibZXing",
-      "source_files": "LBXScan/LibZXing/**/*.{h,m}"
-    }
-  ]
+  "dependencies": {
+    "ZXingObjC": [
+      "~> 3.0"
+    ]
+  }
 }

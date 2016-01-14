@@ -1,1 +1,0 @@
-../../../LBXScan/LBXScan/LibZXing/ZXingObjC/client/result/ZXEmailAddressParsedResult.h

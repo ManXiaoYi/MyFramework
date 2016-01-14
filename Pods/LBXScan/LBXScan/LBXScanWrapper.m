@@ -41,7 +41,7 @@
 
 + (BOOL)isSysIos7Later
 {
-    //return NO;
+   // return NO;
     
      if([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
          return YES;
@@ -462,6 +462,7 @@
     size_t height = CGRectGetHeight(extent) * scale;
     CGColorSpaceRef cs = CGColorSpaceCreateDeviceGray();
     CGContextRef bitmapRef = CGBitmapContextCreate(nil, width, height, 8, 0, cs, (CGBitmapInfo)kCGImageAlphaNone);
+    CGColorSpaceRelease(cs);
     CIContext *context = [CIContext contextWithOptions:nil];
     CGImageRef bitmapImage = [context createCGImage:image fromRect:extent];
     CGContextSetInterpolationQuality(bitmapRef, kCGInterpolationNone);
@@ -471,7 +472,9 @@
     CGImageRef scaledImage = CGBitmapContextCreateImage(bitmapRef);
     CGContextRelease(bitmapRef);
     CGImageRelease(bitmapImage);
-    return [UIImage imageWithCGImage:scaledImage];
+    UIImage *aImage = [UIImage imageWithCGImage:scaledImage];
+    CGImageRelease(scaledImage);
+    return aImage;
 }
 
 #pragma mark - QRCodeGenerator

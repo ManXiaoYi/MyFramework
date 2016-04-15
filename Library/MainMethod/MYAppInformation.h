@@ -22,6 +22,13 @@
 #define Color_ViewBG_F4F4F4 @"f4f4f4"
 
 
+//  XcodeColor
+#define XCODE_COLORS_ESCAPE  @"\033["
+#define XCODE_COLORS_RESET     XCODE_COLORS_ESCAPE @";"
+#define LogRed(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
+#define LogBlue(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,255;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
+
+
 /** ---- UmengParameter ---- */
 #define Share_Umeng_Key   @"556ea8a867e58e51ae002cb2"
 #define Share_QQ_AppId    @"1104645119"

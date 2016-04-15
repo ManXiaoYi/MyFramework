@@ -74,30 +74,30 @@
     
     
     
-    //定义一个转场动画动画
-    CATransition *animation = [CATransition animation];
-    //设置动画类型
-    /*
-     fade            交叉淡化过渡
-     moveIn            新视图移到旧视图上面
-     push            新视图把旧视图推出去
-     reveal            将旧视图移开,显示下面的新视图
-     pageCurl            向上翻一页
-     pageUnCurl          向下翻一页
-     rippleEffect        滴水效果
-     suckEffect          收缩效果，如一块布被抽走
-     cube                立方体效果
-     oglFlip             上下翻转效果
-     */
-    animation.type = @"suckEffect";
-    //设置动画的方向
-    animation.subtype = kCATransitionFromRight;
-    //设置动画的时间
-    animation.duration = 0.5;
-    //设置动画的节奏(由慢到快..)
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-    //导航控制器中添加动画
-    [self.navigationController.view.layer addAnimation:animation forKey:nil];
+//    //定义一个转场动画动画
+//    CATransition *animation = [CATransition animation];
+//    //设置动画类型
+//    /*
+//     fade            交叉淡化过渡
+//     moveIn            新视图移到旧视图上面
+//     push            新视图把旧视图推出去
+//     reveal            将旧视图移开,显示下面的新视图
+//     pageCurl            向上翻一页
+//     pageUnCurl          向下翻一页
+//     rippleEffect        滴水效果
+//     suckEffect          收缩效果，如一块布被抽走
+//     cube                立方体效果
+//     oglFlip             上下翻转效果
+//     */
+//    animation.type = @"suckEffect";
+//    //设置动画的方向
+//    animation.subtype = kCATransitionFromRight;
+//    //设置动画的时间
+//    animation.duration = 0.5;
+//    //设置动画的节奏(由慢到快..)
+//    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+//    //导航控制器中添加动画
+//    [self.navigationController.view.layer addAnimation:animation forKey:nil];
     
     
     

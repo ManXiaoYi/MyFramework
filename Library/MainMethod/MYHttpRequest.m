@@ -16,21 +16,23 @@
 
 @implementation MYHttpRequest
 
-/**
- *  发送一GET请求
- */
+#pragma mark -
+#pragma mark - 发送一GET请求
 + (void)requestGETWith:(NSString *)firstParam and:(NSString *)secondParam dict:(NSDictionary *)infoDict requestSuccess:(RequestSuccess)requestSuccess requestFailure:(RequestFailure)requestFailure {
     // 判断网络连接状态
     [MYHttpRequest checkNetworkConnectionState];
     
     NSString *urlStr = [MYHttpRequest requestGETPath:firstParam andSection:secondParam andParams:infoDict];
-    NSLog(@"\n\n-------------------------------------------------------------------------->\n\nurlStr = %@\n\n<--------------------------------------------------------------------------\n\n", urlStr);
+    LogRed(@"urlStr.............\n%@\n%@\n\n", urlStr, [self dictionaryToJson:infoDict]);
+    
     AFHTTPSessionManager *httpManager  = [AFHTTPSessionManager manager];
     httpManager.requestSerializer.timeoutInterval = KTimeoutInterval;
     [httpManager GET:urlStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (requestSuccess) {
+            
+            LogBlue(@"responseObject.............\n%@\n\n",  [self dictionaryToJson:responseObject]);
             requestSuccess(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -63,15 +65,14 @@
     return urlStr;
 }
 
-/**
- *  发送一POST请求
- */
+#pragma mark -
+#pragma mark - 发送一POST请求
 + (void)requestPOSTWith:(NSString *)firstParam and:(NSString *)secondParam dict:(NSDictionary *)infoDict requestSuccess:(RequestSuccess)requestSuccess requestFailure:(RequestFailure)requestFailure {
     // 判断网络连接状态
     [MYHttpRequest checkNetworkConnectionState];
     
     NSString *urlStr = [MYHttpRequest requestPOSTPath:firstParam andSection:secondParam];
-    NSLog(@"\n\n-------------------------------------------------------------------------->\n\nurlStr = %@/data=%@\n\n<--------------------------------------------------------------------------\n\n", urlStr, infoDict);
+    LogRed(@"urlStr.............\n%@\n%@\n\n", urlStr, [self dictionaryToJson:infoDict]);
     
     NSString *jsonStr = nil;
     NSError *error;
@@ -93,7 +94,8 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (requestSuccess) {
-            NSLog(@"\n\n-------------------------------------------------------------------------->\n\nresponseObject = %@\n\n<--------------------------------------------------------------------------\n\n",  responseObject);
+            
+            LogBlue(@"responseObject.............\n%@\n\n",  [self dictionaryToJson:responseObject]);
             requestSuccess(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -116,13 +118,12 @@
     return urlStr;
 }
 
-/**
- *  下载文件
- */
+#pragma mark -
+#pragma mark - 下载文件
 + (void)downloadFileWithWithFuncName:(NSString *)firstParam function:(NSString *)secondParam jobid:(NSString *)jobid success:(RequestSuccess)success failure:(RequestFailure)failure {
     NSString *urlStr = [NSString stringWithFormat:@"%@/%@/%@/%@?v=1&sourcetype=1&corpid=%@&token=%@&jobid=%@&source=%@", SERVERSIP, @"v204", firstParam, secondParam, ValueFUD(user_login_userid), ValueFUD(user_login_token), jobid, @"ios"];
     urlStr = [urlStr stringByReplacingOccurrencesOfString:@"(null)" withString:@""];
-    NSLog(@"-------------------------------------------------------------------------->\n\nurlStr = %@\n\n<--------------------------------------------------------------------------", urlStr);
+    NSLog(@"-------------------------------------------------------------------------->\n\nurlStr ---------------------------------------------- %@\n\n<--------------------------------------------------------------------------", urlStr);
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:5.0];
     NSURLSession *backgroundSession = [[NSURLSession alloc] init];
@@ -140,9 +141,8 @@
     //    [afOperation start];
 }
 
-/**
- *  网络连接状态
- */
+#pragma mark -
+#pragma mark - 网络连接状态
 static NSString * const AFAppDotNetAPIBaseURLString = @"https://api.app.net/";
 + (void)checkNetworkConnectionState {
     AFHTTPSessionManager *sharedClient = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString]];
@@ -165,6 +165,18 @@ static NSString * const AFAppDotNetAPIBaseURLString = @"https://api.app.net/";
         }
     }];
     [sharedClient.reachabilityManager startMonitoring];
+}
+
+#pragma mark -
+#pragma mark - 字典转成JSon
++ (NSString *)dictionaryToJson:(NSDictionary *)dic
+{
+    if (dic) {
+        NSError *parseError = nil;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&parseError];
+        return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+    return @"";
 }
 
 @end
